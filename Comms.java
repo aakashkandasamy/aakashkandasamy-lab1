@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 public class Comms {
 
-  public static String run(String[] args) {
+  public static String run(String[] args) { 
     
     // Encrypt or decrypt argument
     boolean encrypt = true;
