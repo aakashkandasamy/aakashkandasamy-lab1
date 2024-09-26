@@ -45,8 +45,9 @@ public class Enigma{
             int firstPassIndex = rotors[0].indexOf(firstPass);
 
             result.append(rotors[0].charAt(firstPassIndex));
-        }
             rotate();
+        }
+        return result.toString();
     }
 
 
