@@ -10,25 +10,23 @@ public class Rotor {
         this.startChar = c;
         this.initRot - new String (v);
 
-        while(this.rotorValues.charAt(0) != this.startChar)(
+        while(this.rotorValues.charAt(0) != this.startChar){
             this.rotate();
-        )
-        while(!this.rotate());
-            
+        }            
     }
     
     public boolean rotate(){
-        //TODO
-               
+        this.rotorValues = this.rotorValues.charAt(this.rotorValues.length() - 1) + this.rotorValues.substring(0, this.rotorValues.length() - 1);
+        return this.rotorValues.equals(this.initRot);
     }
     
 
     public int indexOf(char c){
-        //TODO
+        return this.rotorValues.indexOf(c);
     }
 
     public char charAt(int idx){
-        //TODO
+        return this.rotorValues.charAt(idx);
     }
 }
     
